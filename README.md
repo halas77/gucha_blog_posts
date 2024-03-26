@@ -41,8 +41,8 @@ npm install
 
     ```bash
     PORT=5000
-    MONGODB_URI=YOUR_MONGODB_URI
-    JWT_SECRET=your_secret_key
+    MONGODB_URL=YOUR_MONGODB_URI
+    SECRET=your_secret_key
     ```
 
 ## Usage
