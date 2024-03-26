@@ -57,14 +57,6 @@ router.get("/user/:userId", async (req, res) => {
   }
 });
 
-// Search Posts
-
-router.get("/search/:propmt", async (req, res) => {
-  try {
-  } catch (error) {
-    res.status(500).json(error);
-  }
-});
 
 // Update Post
 
