@@ -20,13 +20,13 @@ const PostDetails = () => {
     setLoader(true);
     try {
       const res = await axios.get(URL + "/api/posts/" + postId);
-      console.log(res.data);
+      // console.log(res.data);
       setPost(res.data);
       setLoader(false);
     } catch (err) {
       setLoader(true);
 
-      console.log(err);
+      // console.log(err);
     }
   };
 
@@ -90,7 +90,7 @@ const PostDetails = () => {
             <div className="flex justify-center items-center space-x-2">
               {post.categories?.map((c, index) => (
                 <>
-                  <div key={index} className="bg-gray-800 rounded-lg px-3 py-1 text-gray-200">
+                  <div key={index} className="bg-gray-800 rounded-lg px-3 py-1 text-gray-400 text-sm">
                     {c}
                   </div>
                 </>

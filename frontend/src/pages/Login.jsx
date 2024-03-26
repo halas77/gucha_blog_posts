@@ -58,15 +58,16 @@ const Login = () => {
             required
             placeholder="Enter your password"
           />
+          {error && (
+            <h3 className="text-red-500 text-xs ">Wrong Credentials</h3>
+          )}
           <button
             onClick={handleLogin}
             className="w-full px-4 py-4 text-lg font-serif text-white bg-black rounded-lg hover:bg-gray-500 hover:text-black ease-in-out duration-300"
           >
             Log in
           </button>
-          {error && (
-            <h3 className="text-red-500 text-sm ">Wrong Credentials</h3>
-          )}
+          
           <div className="flex justify-center items-center space-x-3">
             <p className="text-gray-300">New here?</p>
             <p className="text-gray-50 hover:text-gray-300">

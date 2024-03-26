@@ -18,6 +18,12 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const handleOnKey = (e) => {
+    if (e.key === 'Enter') {
+      navigate(prompt ? `?search=${prompt}` : '/');
+    }
+  }
+
   return (
     <div className="bg-gray-900 flex items-center justify-between px-6 lg:px-[200px] md:px-24 py-4 border-b border-gray-700">
       <h1 className="text-xl font-bold font-mono text-white">
@@ -29,6 +35,7 @@ const Navbar = () => {
           className="outline-none px-16 py-3 rounded-full bg-gray-900 font-serif text-white border border-gray-600"
           placeholder="Search for posts"
           type="text"
+          onKeyDown={handleOnKey}
         />
         <p
           onClick={() => navigate(prompt ? "?search=" + prompt : navigate("/"))}
@@ -63,7 +70,7 @@ const Navbar = () => {
       </div>
       <div onClick={showMenu} className="md:hidden text-white">
         <p className="cursor-pointer relative">
-          <FaBars size={23}/>
+          <FaBars size={23} />
         </p>
         {menu && <Menu />}
       </div>

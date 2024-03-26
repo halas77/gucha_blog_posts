@@ -74,24 +74,29 @@ const CreatePost = () => {
       <div>
         <div className="px-6 md:px-[200px] pt-8 bg-gray-900">
           <h1 className="text-xl text-white font-serif">Create post</h1>
-          <form className="w-full flex flex-col space-y-4 md:space-y-8 mt-4 bg-gray-800 p-10 rounded-3xl">
+          <form className="w-full flex flex-col space-y-4 md:space-y-6 mt-4 bg-gray-800 p-10 rounded-3xl">
             <input
               onChange={(e) => setTitle(e.target.value)}
               type="text"
               placeholder="Enter post title"
-              className="px-4 py-4 outline-none bg-gray-900 rounded-lg text-sm text-white font-serif"
+              className="px-4 py-4 bg-gray-900 rounded-lg text-sm text-white font-serif"
             />
-            <input
-              onChange={(e) => setFile(e.target.files[0])}
-              type="file"
-              className="px-4 bg-gray-900 text-white py-4 text-sm rounded-lg"
-            />
+            <div  className="space-y-2 w-full">
+              <p className="text-gray-300 font-serif">Image:</p>
+              <input
+                onChange={(e) => setFile(e.target.files[0])}
+                type="file"
+                className="px-4 bg-gray-900 text-white py-4 text-sm rounded-lg"
+                placeholder="Insert image"
+              />
+            </div>
+
             <div className="flex flex-col">
               <div className="flex items-center space-x-4 md:space-x-6">
                 <input
                   value={cat}
                   onChange={(e) => setCat(e.target.value)}
-                  className="px-4 utline-none bg-gray-900 text-white py-4 text-sm rounded-lg font-serif"
+                  className="px-4  bg-gray-900 text-white py-4 text-sm rounded-lg font-serif"
                   placeholder="Enter post category"
                   type="text"
                 />
@@ -125,7 +130,7 @@ const CreatePost = () => {
               onChange={(e) => setDesc(e.target.value)}
               rows={15}
               cols={15}
-              className="px-6 outline-none bg-gray-900 text-white py-5 text-sm rounded-lg font-serif"
+              className="px-6 bg-gray-900 text-white py-5 text-sm rounded-lg font-serif"
               placeholder="Enter post description"
             />
             <button
