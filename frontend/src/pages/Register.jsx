@@ -52,6 +52,15 @@ export const Register = () => {
       <div className="bg-gray-900 w-full flex justify-center items-center h-[80vh] ">
         <div className="flex flex-col justify-center items-center space-y-4 w-[80%] md:w-[35%] p-10 bg-gray-800 rounded-3xl">
           <h1 className="text-xl font-bold text-left font-serif text-gray-200">Create an account</h1>
+          
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full px-4 py-2 border-2 border-black outline-0 rounded-lg"
+            type="email"
+            required
+            placeholder="Enter your email"
+            name="email"
+          />
           <input
             onChange={(e) => setUsername(e.target.value)}
             className="w-full px-4 py-2 border-2 border-gray-200 outline-0 rounded-lg"
@@ -59,14 +68,6 @@ export const Register = () => {
             required
             placeholder="Enter your username"
             name="username"
-          />
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-2 border-2 border-black outline-0 rounded-lg"
-            type="text"
-            required
-            placeholder="Enter your email"
-            name="email"
           />
           <input
             onChange={(e) => setPassword(e.target.value)}
