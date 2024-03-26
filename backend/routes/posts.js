@@ -8,6 +8,28 @@ const router = express.Router();
 
 router.post("/create", verifyToken, async (req, res) => {
   try {
+    // input validations
+    const validationErrors = [];
+
+    // Title Validation
+    if (
+      !req.body.title ||
+      typeof req.body.title !== "string" ||
+      req.body.title.trim() === ""
+    ) {
+      validationErrors.push(
+        "Title is required and must be a non-empty string."
+      );
+    } else if (req.body.title.length > 255) {
+      validationErrors.push("Title cannot exceed 255 characters.");
+    }
+
+    if (validationErrors.length > 0) {
+      // Return 400 Bad Request with error details
+      return res.status(400).json({ errors: validationErrors });
+    }
+
+    
     const newPost = new Post(req.body);
     // console.log(req.body)
     const savedPost = await newPost.save();
@@ -56,7 +78,6 @@ router.get("/user/:userId", async (req, res) => {
     res.status(500).json(error);
   }
 });
-
 
 // Update Post
 
