@@ -34,21 +34,33 @@ cd ../backend
 npm install
 ```
 
-3. Set up environment variables:
-- Create a .env file in the backend directory.
-- Define your environment variables in the .env file. Example:
-  PORT=5000
-  MONGODB_URI=YOUR_MONGODB_URI
-  JWT_SECRET=your_secret_key
+## Set up environment variables
+
+1. Create a `.env` file in the backend directory.
+2. Define your environment variables in the `.env` file. Example:
+
+    ```bash
+    PORT=5000
+    MONGODB_URI=YOUR_MONGODB_URI
+    JWT_SECRET=your_secret_key
+    ```
 
 ## Usage
+
 1. Start the backend server:
-     cd backend
-     nodemon app.js
+
+    ```bash
+    cd backend
+    nodemon app.js
+    ```
 
 2. Start the frontend development server:
-     cd frontend
-     npm run dev
+
+    ```bash
+    cd frontend
+    npm run dev
+    ```
+
 
 
 
