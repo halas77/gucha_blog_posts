@@ -5,9 +5,7 @@
 This is a full-stack blog post project built using MongoDB, Express.js, React with Vite, and Tailwind CSS. The project allows users to write, edit, read, and delete their own blogs. Users can also search for blogs by keywords in their titles and filter for their own blogs only. The application features an awesome design crafted using Tailwind CSS. Additionally, the project utilizes various libraries and tools such as Multer for image upload, JSON Web Token (JWT) for authentication, Bcrypt for message encryption and decryption, and Dotenv for managing environment variables.
 
 ![home1](https://github.com/halas77/gucha_blog_posts/assets/138193176/17570c9a-baf8-489b-88b6-e245ac643af4)
-![create](https://github.com/halas77/gucha_blog_posts/assets/138193176/f5dee877-4455-44e1-8c7e-64a47703f921)
-![not found](https://github.com/halas77/gucha_blog_posts/assets/138193176/2bbae198-d5f6-4fd1-b6e1-d67f7748ff46)
-![red](https://github.com/halas77/gucha_blog_posts/assets/138193176/c8185f23-1d80-429c-8ddc-7a8b8c3fb982)
+
 
 ## Features
 
