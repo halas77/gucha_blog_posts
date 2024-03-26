@@ -13,7 +13,7 @@ This is a full-stack blog post project built using MongoDB, Express.js, React wi
 - **Blog Management:** Users can write, edit, read, and delete their own blogs.
 - **Search and Filter:** Users can search for blogs by keywords in their titles and filter for their own blogs only.
 - **Image Upload:** Integrated Multer for uploading images to the server.
-- **Input Validation:** Integrated input validation with zod in both client and server side.
+- **Input Validation:** Integrated input validation with zod.
 - **Secure Data Storage:** Employs Bcrypt for secure message encryption and decryption.
 - **Responsive Design:** Utilizes Tailwind CSS for creating responsive and visually appealing user interfaces.
 - **Environment Variables:** Dotenv is used for managing environment variables, ensuring secure configuration management.
