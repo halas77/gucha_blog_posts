@@ -41,7 +41,7 @@ const Navbar = () => {
           onClick={() => navigate(prompt ? "?search=" + prompt : navigate("/"))}
           className="cursor-pointer"
         >
-          <BsSearch className="text-white text-lg ml-3 " />
+          <BsSearch className="text-white text-xl ml-3 " />
         </p>
       </div>
 

@@ -87,8 +87,8 @@ export const Register = () => {
           />
           {error && (
             <h3 className="text-red-500 text-xs">
-              <p>Username must have atleast 3 character.</p>
-              <p>Password must have atleast 6 character.</p>
+              <p>Username must have at least 3 character.</p>
+              <p>Password must have at least 6 character.</p>
             </h3>
           )}
           <button

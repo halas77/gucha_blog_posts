@@ -59,8 +59,8 @@ const MyBlogs = () => {
           <>
             <img
               className="rounded-[100px] mx-auto p-5 lg:w-[600px]"
-              src="./no_data.gif"
-              alt=""
+              src="/no_data.gif"
+              alt="no data image"
             />
             <h3 className="text-center mt-16 text-white font-serif">
               No Posts Available
