@@ -27,7 +27,7 @@ This is a full-stack blog post project built using MongoDB, Express.js, React wi
 2. Install dependencies for both frontend and backend:
 
 ```bash
-cd blog-post-project
+cd gucha-blog-posts
 cd frontend
 npm install
 cd ../backend
